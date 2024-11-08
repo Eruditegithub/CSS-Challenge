@@ -1,0 +1,32 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: darkgray;
+}
+
+:root {
+    --green: #13f513;
+    --white: #FFFFFF;
+}
+
+.nig-flag {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em auto;
+}
+
+.stripe {
+    flex-grow: 1;
+}
+.green {
+    background: var(--green) ;
+}
+.white {
+    background: var(--white)
+}
+.green {
+    background: var(--green);
+}

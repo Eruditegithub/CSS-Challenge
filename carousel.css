@@ -1,0 +1,40 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-word: red;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1::after {
+   content: "";
+   animation: 5s swap infinite;
+   background: var(--bg-word);
+   padding: 10px;
+   color: white;
+   border-radius: 5px;
+   margin-left: 4px;
+}
+
+@keyframes swap {
+    0% {
+        content: "Coding";
+    }
+    25% {
+        content: "Programming";
+    }
+    50% {
+        content: "Developing";
+    }
+    100% {
+        content: "Designing";
+    }
+}

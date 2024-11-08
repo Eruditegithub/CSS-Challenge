@@ -1,0 +1,32 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: #FFFFFF;
+    --red: #FF0002;
+    --flag-height: 200px;
+}
+.swiss-flag {
+    height: var(--flag-height);
+    width: var(--flag-height);
+    background: var(--red);
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cross1 {
+    height: calc(var(--flag-height) * 3 / 16);
+    width: calc(var(--flag-height) * 5 / 8);
+    background: var(--white);
+}
+.cross2 {
+    height: calc(var(--flag-height) * 5 / 8);
+    width: calc(var(--flag-height) * 3 / 16);
+    background: var(--white);
+    position: absolute;
+}

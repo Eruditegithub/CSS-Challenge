@@ -1,0 +1,80 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --toggle-switch-bg: #232428;
+    --toggle-bg:#fff;
+}
+
+.toggle-wrap {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-input {
+    display: none;
+}
+
+label {
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    padding: 0.25em;
+    background: var(--toggle);
+    border: none;
+}
+
+.label-border{
+    background: linear-gradient(230deg, #f02fc2, #ea6060, #7117ea);;
+}
+.toggle-switch {
+    height: 40px;
+    width: 40px;
+    background: var(--toggle-switch-bg);
+    border-radius: 50%;
+    transition: all 5s;
+    transform: translateX(60px);
+}
+
+.toggle-switch:hover {
+    animation: color-change 0.5s infinite;
+    
+}
+
+@keyframes color-change {
+    0% {
+       background-color: var(--toggle-switch-bg);
+    }
+    20% {
+       background-color: #FF0000;
+    }
+    40% {
+       background-color: #0000FF;
+    }
+    60% {
+       background-color: #f02fc2;
+    }
+    80% {
+       background-color: #FFFF00;
+    }
+    100% {
+        background-color: #008000;
+    }
+}
+.toggle-switch::before {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    left: 4px;
+    bottom: 4px;
+    transition: 0.4s;
+}
+
+.toggle-input:checked + .toggle-switch::before {
+    left: 30px;
+    transform: translateX(60px)
+}

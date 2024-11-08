@@ -1,0 +1,33 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: darkgray;
+}
+
+:root {
+    --red: #ED2938;
+    --white: #FFF;
+    --blue: #002495;
+}
+
+.ghana-flag {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stripe {
+    flex-grow: 1;
+}
+
+.red {
+    background: var(--red) ;
+}
+.blue {
+    background: var(--blue)
+}
+.white {
+    background: var(--white);
+}

@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-family: "Karla", sans-serif;
+  --body-bg: #1e1f25;
+  --btn-bg: #000;
+  --btn-color: #4c1a57;
+  --btn-color-hover: #bab0d4;
+  --grad-color1: #f02fc2;
+  --grad-color2: #ea6060;
+  --grad-color3: #7117ea;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.button-border {
+  background: linear-gradient(115deg, #f02fc2, #ea6060, #7117ea);
+  padding: 5px;
+}
+.button {
+  border: none;
+  background: var(--btn-bg);
+  color: var(--btn-color);
+  padding: 1em 1.5em;
+  letter-spacing: 5px;
+  /*border-image: linear-gradient();
+    border-image-slice: 1;*/
+}
+
+.button-border:hover {
+  background: linear-gradient(230deg, #f02fc2, #ea6060, #7117ea);
+}
+
+.button-border:hover .button {
+  color: var(--btn-color-hover);
+  padding: 1.1em, 1.6em;
+}

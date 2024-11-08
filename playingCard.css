@@ -1,0 +1,38 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --card-height: 200px;
+    --card-color: #000;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 2em auto;
+}
+.card {
+    border: 1px solid var(--card-color);
+    height: var(--card-height);
+    width: 150px;
+    border-radius: 5px;
+    display: grid;
+    padding: .5em;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+}
+.top {
+    font-size: 20px;
+}
+.bottom {
+    font-size: 20px;
+    transform: rotate(180deg);
+}
+.top .first-spade 
+.bottom .second-spade {
+    padding-left:2px ;
+}
